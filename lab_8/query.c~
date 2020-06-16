@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "hashtable.h"
+#include "indexFiles.h"
+#include "graphUtils.h"
+
+int main(int argv,char** argc)
+{
+  struct graph* g;
+  g = readGraph(argc[1]); /*Reading in graph */
+  if(g != NULL) /*Calculating page rank */
+    {
+      calculatePageRank(g);
+    }
+  
+}

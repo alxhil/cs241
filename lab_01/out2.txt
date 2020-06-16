@@ -1,0 +1,12 @@
+total 60
+drwx--x--x 2 alhill ugrad  4096 Jan 26 20:33 .
+drwx------ 7 alhill ugrad  4096 Jan 25 13:59 ..
+-rw------- 1 alhill ugrad 12288 Jan 18 12:44 .alex_hill.c.swp
+-rw-r--r-- 1 alhill ugrad   207 Jan 26 20:32 alex-hill.txt
+-rw-r--r-- 1 alhill ugrad   185 Jan 26 20:31 alex-hill.txt~
+-rwx------ 1 alhill ugrad  8616 Jan 23 12:19 a.out
+-rw------- 1 alhill ugrad   599 Jan 25 12:20 lab01_alexhill.c
+-rw------- 1 alhill ugrad   599 Jan 23 12:19 lab01_alexhill.c~
+-rw------- 1 alhill ugrad 12288 Jan 18 14:12 .lab01_alexhill.c.swp
+-rwx------ 1 alhill ugrad    29 Jan 26 20:32 out1.txt
+-rwx------ 1 alhill ugrad     0 Jan 26 20:33 out2.txt

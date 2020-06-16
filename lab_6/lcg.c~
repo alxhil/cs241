@@ -1,0 +1,64 @@
+/* Alex Hill */
+/* CS 241L-005 */
+/* March-22-2018 */
+#include<stdio.h>
+#include "lcg.h"
+long primeTest(unsigned long n)
+{
+  unsigned long test = 2;
+  unsigned long product = 1;
+  while (test <= n)
+    {
+      if (n % test == 0)
+	{
+	  product *= test;
+	  while (n % test == 0)
+	    {
+	      n /= test;
+	    }
+	}
+      test++;
+    }
+  return product;
+}
+struct LinearCongruentialGenerator makeLCG(unsigned long m, unsigned long c)
+{
+  struct LinearCongruentialGenerator lcg2;
+  unsigned long p = primeTest(m);
+  if (m % 4 == 0)
+    {
+      lcg2.a = 1+2*p;
+    }
+  else
+    {
+      lcg2.a = 1+p;
+    }
+  if (lcg2.a > m || m < 0 || lcg2.a < 0 || c < 0 || c > m)
+    {
+      lcg2.a = lcg2.c = lcg2.m = lcg2.x = 0;
+    }
+  else
+    {
+      lcg2.c = c;
+      lcg2.x = c;
+      lcg2.m = m;
+    }
+  return lcg2;
+}
+unsigned long getNextRandomValue(struct LinearCongruentialGenerator* lcg)
+{
+  unsigned long next;
+  next = lcg -> x;
+  lcg -> x = ((lcg -> a* lcg -> x + lcg -> c) %lcg -> m);
+  return next;
+}
+
+
+
+
+
+
+
+
+
+

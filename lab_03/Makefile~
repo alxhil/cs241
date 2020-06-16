@@ -1,0 +1,2 @@
+getBits: getBits.c
+	gcc -o getBits getBits.c

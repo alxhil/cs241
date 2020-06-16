@@ -1,0 +1,8 @@
+#include <stdlib.h>
+#include <stdio.h>
+void readInFile(char* fn, struct HTable* table)
+{
+  FILE* file;
+  file = fopen(fn,"r");
+  
+}

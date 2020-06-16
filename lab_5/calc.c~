@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char* argv[])
+{
+  int a = 0;
+  int b = 0;
+  if(argc == 3)
+  {
+    int val1;
+    int val2;
+    val1 = atoi(argv[1]);
+    val2 = atoi(argv[2]);
+    if(isdigit(val1) && isdigit(val2))
+      {
+	printf("%d\n", argc);
+	printf("%d\n", val1);
+	printf("%d\n", val2);
+	printf("%d\n", val1+val2);
+      }
+    else
+      {
+	printf("Error: NaN");
+      }
+  }else
+    {
+      printf("Not enough arguements \n");
+    }
+  return 0;
+}
